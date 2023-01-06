@@ -2,7 +2,9 @@ Introduction:
 
 Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 
 
-This fork will use training and class images from your Google Drive. Quick and easy usage. Everything is preconfigured for 36 (N) training pictures via following formula:
+This fork will use training and class images from your Google Drive. Quick and easy usage. 
+
+Everything is preconfigured for 36 (N) training pictures via following formula:
 
 Number of subject images (instance) = N
 
