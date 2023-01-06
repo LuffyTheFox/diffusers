@@ -1,4 +1,5 @@
-Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 and Genshin Impact characters
+Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers 
+optimized for Anything v3.0 and Genshin Impact characters
 
 This fork will use training and class images from your Google Drive. Everything is preconfigured for 36 training pictures.
 
