@@ -5,10 +5,15 @@ Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers
 This fork will use training and class images from your Google Drive. Quick and easy usage. Everything is preconfigured for 36 training pictures via following formula:
 
 Number of subject images (instance) = N
+
 Number of class images (regularization) = N x 12
+
 Maximum number of Steps = N x 80 (this is what I'm tweaking right now but between 80 and 100 should be enough)
+
 Learning rate = 1e-6
+
 Learning rate schedule = polynomial
+
 Learning rate warmup steps = Steps / 10
 
 Quick start guide:
