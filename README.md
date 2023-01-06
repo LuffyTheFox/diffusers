@@ -2,7 +2,7 @@ Introduction:
 
 Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 
 
-This fork will use training and class images from your Google Drive. Quick and easy usage. Everything is preconfigured for 36 training pictures via following formula:
+This fork will use training and class images from your Google Drive. Quick and easy usage. Everything is preconfigured for 36 (N) training pictures via following formula:
 
 Number of subject images (instance) = N
 
@@ -26,6 +26,8 @@ And save them to: (GoogleDrive\SD\waifu) directory
 Open this Google Colab and start training:
 
 [![DreamBooth Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuffyThefox/diffusers/blob/main/examples/dreambooth/DreamBooth_Anything.ipynb)
+
+After training model.ckpt file for AUTOMATIC1111 Web UI will be saved to (GoogleDrive\SD\ckpt\(number of steps)\model.ckpt) directory
 
 Use the table below to choose the best flags based on your memory and speed requirements. Tested on Tesla T4 GPU.
 Everything is already preconfigured for free version of Google Colab.
