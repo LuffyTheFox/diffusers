@@ -1,4 +1,4 @@
-#Introduction:
+Introduction:
 
 Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 
 This fork will use training and class images from your Google Drive. Everything is preconfigured for 36 training pictures via following formula:
@@ -10,7 +10,7 @@ Learning rate = 1e-6
 Learning rate schedule = polynomial
 Learning rate warmup steps = Steps / 10
 
-#Quick start guide:
+Quick start guide:
 
 1) Download training pictures from here: https://drive.google.com/drive/folders/1eYmoi_ukumAsvOf9M7-0rWYFjPyoed1r?usp=share_link
 And save them to: (GoogleDrive\SD\genshin) directory
