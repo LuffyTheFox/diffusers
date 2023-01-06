@@ -23,6 +23,7 @@ Open this Google Colab and start training:
 [![DreamBooth Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuffyThefox/diffusers/blob/main/examples/dreambooth/DreamBooth_Anything.ipynb)
 
 Use the table below to choose the best flags based on your memory and speed requirements. Tested on Tesla T4 GPU.
+Everything is already preconfigured for free version of Google Colab.
 
 | `fp16` | `train_batch_size` | `gradient_accumulation_steps` | `gradient_checkpointing` | `use_8bit_adam` | GB VRAM usage | Speed (it/s) |
 | ---- | ------------------ | ----------------------------- | ----------------------- | --------------- | ---------- | ------------ |
