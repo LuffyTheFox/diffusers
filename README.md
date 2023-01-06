@@ -1,11 +1,21 @@
-Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 and Genshin Impact characters
+Fork from ShivamShirao diffusers repo https://github.com/ShivamShrirao/diffusers optimized for Anything v3.0 
 
-This fork will use training and class images from your Google Drive. Everything is preconfigured for 36 training pictures.
+This fork will use training and class images from your Google Drive. Everything is preconfigured for 36 training pictures via following formula:
 
-Training pictures located here: https://drive.google.com/drive/folders/1eYmoi_ukumAsvOf9M7-0rWYFjPyoed1r?usp=share_link
-Class pictures located here: https://drive.google.com/drive/folders/1XGfyLeqTcF4CMplcC1atxR0CtFHeVfGA?usp=share_link
+# Number of subject images (instance) = N
+# Number of class images (regularization) = N x 12
+# Maximum number of Steps = N x 80 (this is what I'm tweaking right now but between 80 and 100 should be enough)
+# Learning rate = 1e-6
+# Learning rate schedule = polynomial
+# Learning rate warmup steps = Steps / 10
 
-You can now convert to ckpt format using this script to use in UIs like AUTOMATIC1111. https://github.com/LuffyTheFox/diffusers/raw/main/scripts/convert_diffusers_to_original_stable_diffusion.py Check colab notebook for example usage.
+Quick start guide:
+1) Download training pictures from here: https://drive.google.com/drive/folders/1eYmoi_ukumAsvOf9M7-0rWYFjPyoed1r?usp=share_link
+And save them to: (GoogleDrive\SD\genshin) directory
+2) Download class pictures from here: https://drive.google.com/drive/folders/1XGfyLeqTcF4CMplcC1atxR0CtFHeVfGA?usp=share_link
+And save them to: (GoogleDrive\SD\waifu) directory
+
+Open this Google Colab and start training:
 
 [![DreamBooth Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LuffyThefox/diffusers/blob/main/examples/dreambooth/DreamBooth_Anything.ipynb)
 
